@@ -1,7 +1,7 @@
 $primary-color: #5956E9;
 $secundary-color: #4745d8;
 $primary-text-color: #232233;
-$paragraphs-text-color: #6C6C72;
+$gray-paragraphs-text-color: #6C6C72;
 
 @mixin personalize-bg($bg-color, $padding, $text-color, $border-radius) {
     background-color: $bg-color;
@@ -22,9 +22,6 @@ $paragraphs-text-color: #6C6C72;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-
-    min-height: 100vh;
 
     header {
         display: flex;
@@ -155,101 +152,192 @@ $paragraphs-text-color: #6C6C72;
         }
     }
 
-    .homeSection {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
+    main {
 
-        padding: 2%;
-        padding-top: 15%;
+        .homeSection {
+            display: flex;
+            justify-content: space-between;
 
+            padding: 5%;
+            padding-top: 15%;
 
-        width: 100%;
-        height: 100%;
+            width: 100%;
+            height: 100%;
 
-        background-image: url("/src/assets/background/bg-img.svg");
-        background-repeat: no-repeat;
-        background-size: 100%;
+            background-image: url("/src/assets/background/bg-img.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
 
-        .homeSectionLeftWrapper {
-            display: grid;
-            place-content: center;
-            position: relative;
+            .homeSectionLeftWrapper {
+                display: grid;
+                place-content: center;
+                position: relative;
 
-            .homeSectionLeftWrapperBoxContant {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
+                .homeSectionLeftWrapperBoxContant {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
 
-                position: absolute;
-                top: 25%;
-                right: 50px;
+                    position: absolute;
+                    top: 25%;
+                    right: 50px;
 
-                gap: 40px;
+                    gap: 40px;
 
-                padding: 5%;
+                    padding: 5%;
 
-                background-color: #FFF;
+                    background-color: #FFF;
 
-                h1 {
-                    color: $primary-color;
-                    font-size: 3.05188rem;
-                    font-style: normal;
-                    font-weight: 700;
-                }
+                    h1 {
+                        color: $primary-color;
+                        font-size: 3.05188rem;
+                        font-style: normal;
+                        font-weight: 700;
+                    }
 
-                div {
                     div {
-                        img {
-                            cursor: pointer;
+                        div {
+                            img {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .aboutSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            padding: 5%;
+            gap: 80px;
+
+            text-align: center;
+
+            .aboutSectionBottomContainer {
+                display: flex;
+                gap: 25%;
+
+                .aboutSectionBottomContainerRigthWrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 80px;
+
+                    .aboutSectionTextBoxContant {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        div {
+                            display: flex;
+                            gap: 10px;
+                        }
+
+                        p {
+                            text-align: start;
                         }
                     }
                 }
             }
         }
 
-    }
-
-    .aboutSection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        padding: 5%;
-        gap: 80px;
-
-        text-align: center;
-
-        .aboutSectionBottomContainer {
+        .featuresSection {
             display: flex;
-            gap: 25%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
 
-            .aboutSectionBottomContainerRigthWrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 80px;
+            background-image: url("/src/assets/background/bg-img.svg");
+            background-size: cover;
 
-                .aboutSectionTextBoxContant {
+            color: #FFF;
+
+            padding: 10%;
+
+            gap: 50px;
+
+            .featuresSectionAppInterface {
+                display: grid;
+                gap: 2%;
+                grid-template-columns: repeat(3, 1fr);
+
+                div {
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
+                }
 
-                    div {
-                        display: flex;
-                        gap: 10px;
-                    }
+                .text-box1 {
+                    grid-column: 1/4;
+                }
 
-                    p {
-                        text-align: start;
-                    }
+                .text-box2 {
+                    grid-row: 2/3;
+                    padding-top: 25%;
+                }
+
+                .text-box3 {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    grid-row: 2/5;
+                }
+
+                .text-box4 {
+                    grid-row: 2/3;
+                    padding-top: 25%;
+                }
+
+                .text-box5 {
+                    grid-row: 4/5;
+                    padding-bottom: 25%;
+                }
+
+                .text-box6 {
+                    grid-row: 4/5;
+                    padding-bottom: 25%;
+                }
+
+                .text-box7 {
+                    grid-column: 1/4;
+                }
+
+                .featuresSectionAppInterfaceSurfacesTextBox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .featuresSectionAppInterfaceLeftSideTextBox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: end;
+                    text-align: end;
+                }
+
+                .featuresSectionAppInterfaceRigthSideTextBox {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    text-align: start;
                 }
             }
         }
     }
 }
 
-p {
-    color: $paragraphs-text-color;
+.gray-paragraphs {
+    color: $gray-paragraphs-text-color;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.white-paragraphs {
+    color: #FFF;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;

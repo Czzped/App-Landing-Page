@@ -9,8 +9,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
-  min-height: 100vh;
 }
 .container header {
   display: flex;
@@ -108,11 +106,10 @@
   flex-shrink: 0;
   border-radius: 0.3125rem;
 }
-.container .homeSection {
+.container main .homeSection {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding: 2%;
+  justify-content: space-between;
+  padding: 5%;
   padding-top: 15%;
   width: 100%;
   height: 100%;
@@ -120,12 +117,12 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.container .homeSection .homeSectionLeftWrapper {
+.container main .homeSection .homeSectionLeftWrapper {
   display: grid;
   place-content: center;
   position: relative;
 }
-.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -136,16 +133,16 @@
   padding: 5%;
   background-color: #FFF;
 }
-.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
   color: #5956E9;
   font-size: 3.05188rem;
   font-style: normal;
   font-weight: 700;
 }
-.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant div div img {
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant div div img {
   cursor: pointer;
 }
-.container .aboutSection {
+.container main .aboutSection {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,30 +150,103 @@
   gap: 80px;
   text-align: center;
 }
-.container .aboutSection .aboutSectionBottomContainer {
+.container main .aboutSection .aboutSectionBottomContainer {
   display: flex;
   gap: 25%;
 }
-.container .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper {
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper {
   display: flex;
   flex-direction: column;
   gap: 80px;
 }
-.container .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant {
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.container .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant div {
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant div {
   display: flex;
   gap: 10px;
 }
-.container .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant p {
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant p {
+  text-align: start;
+}
+.container main .featuresSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("/src/assets/background/bg-img.svg");
+  background-size: cover;
+  color: #FFF;
+  padding: 10%;
+  gap: 50px;
+}
+.container main .featuresSection .featuresSectionAppInterface {
+  display: grid;
+  gap: 2%;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container main .featuresSection .featuresSectionAppInterface div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box1 {
+  grid-column: 1/4;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box2 {
+  grid-row: 2/3;
+  padding-top: 25%;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-row: 2/5;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box4 {
+  grid-row: 2/3;
+  padding-top: 25%;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box5 {
+  grid-row: 4/5;
+  padding-bottom: 25%;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box6 {
+  grid-row: 4/5;
+  padding-bottom: 25%;
+}
+.container main .featuresSection .featuresSectionAppInterface .text-box7 {
+  grid-column: 1/4;
+}
+.container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+.container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   text-align: start;
 }
 
-p {
+.gray-paragraphs {
   color: #6C6C72;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.white-paragraphs {
+  color: #FFF;
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
