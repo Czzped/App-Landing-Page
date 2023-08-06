@@ -9,8 +9,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
-  background-color: #5956E9;
+  gap: 50px;
+  min-height: 200vh;
+  background-image: url("/src/assets/background/bg-img.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .container header {
   display: flex;
@@ -106,6 +109,42 @@
   height: 5.625rem;
   flex-shrink: 0;
   border-radius: 0.3125rem;
+}
+.container .homeSection {
+  display: flex;
+  gap: 50px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.container .homeSection .homeSectionLeftWrapper {
+  display: grid;
+  place-content: center;
+  position: relative;
+}
+.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 40px;
+  top: 25%;
+  right: 50px;
+  padding: 5%;
+  background-color: #FFF;
+}
+.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
+  color: #5956E9;
+  font-size: 3.05188rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant p {
+  color: #6C6C72;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.container .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant div div img {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
