@@ -89,7 +89,6 @@
   padding: 5%;
   color: #FFF;
   border-radius: 5px;
-  transition: 0.2s;
   text-decoration: none;
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton:hover {
@@ -237,17 +236,129 @@
   align-items: start;
   text-align: start;
 }
+.container footer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  background-color: #232233;
+}
+.container footer .footerTopWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 100px;
+  padding: 8%;
+  background-color: #FFF;
+  border-radius: 30px;
+  width: 100%;
+}
+.container footer .footerTopWrapper .footerTopWrapperLeftTextBox, .container footer .footerTopWrapper .footerTopWrapperRigthTextBox {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+}
+.container footer .footerTopWrapper .footerTopWrapperLeftTextBox span, .container footer .footerTopWrapper .footerTopWrapperRigthTextBox span {
+  background-color: #5956E9;
+  padding: 4%;
+  border-radius: 50px;
+}
+.container footer .footerTopWrapper .footerTopWrapperLeftTextBox span img, .container footer .footerTopWrapper .footerTopWrapperRigthTextBox span img {
+  width: 25px;
+}
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox {
+  border-left: 3px solid #6C6C72;
+  padding-left: 2%;
+}
+.container footer .footerMainWrapper {
+  display: flex;
+  justify-content: space-around;
+  color: #FFF;
+  gap: 10%;
+}
+.container footer .footerMainWrapper div {
+  width: 100%;
+}
+.container footer .footerMainWrapper .footerBottomWrapperLogoArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 25px;
+}
+.container footer .footerMainWrapper .footerBottomWrapperLogoArea div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.container footer .footerMainWrapper .footerBottomWrapperLinksArea {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+.container footer .footerMainWrapper .footerBottomWrapperLinksArea div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 15%;
+}
+.container footer .footerMainWrapper .footerBottomWrapperLinksArea div a {
+  text-decoration: none;
+  color: #FFF;
+}
+.container footer .footerMainWrapper .footerBottomWrapperLinksArea div a:hover {
+  text-decoration: underline;
+}
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea {
+  display: flex;
+  flex-direction: column;
+  gap: 15%;
+}
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div {
+  display: flex;
+  padding: 0.5%;
+  border-radius: 4px;
+  background-color: #FFF;
+}
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 2%;
+}
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div button {
+  background-color: #5956E9;
+  padding: 2.5%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div button:hover {
+  background-color: #4745d8;
+}
+.container footer .footerBottomWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
 
 .gray-paragraphs {
   color: #6C6C72;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 }
 
 .white-paragraphs {
   color: #FFF;
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 }
