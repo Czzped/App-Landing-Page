@@ -291,6 +291,63 @@
 .container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper img {
   width: 100%;
 }
+.container main .howToUseSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #FFF;
+}
+.container main .howToUseSection main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 30vh;
+  background-image: url("/src/assets/background/bg-img.svg");
+  background-size: 100%;
+}
+.container main .howToUseSection main p {
+  width: 50%;
+}
+.container main .howToUseSection img {
+  position: absolute;
+  top: 50%;
+  padding-top: 2.5%;
+  width: 32%;
+}
+.container main .ourTeamSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  padding-top: 20%;
+  width: 100%;
+}
+.container main .ourTeamSection span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container main .ourTeamSection span p {
+  width: 50%;
+}
+.container main .ourTeamSection main {
+  display: flex;
+  gap: 5%;
+}
+.container main .ourTeamSection main .teamProfileContant .teamProfileContantSocialMidias {
+  display: flex;
+  justify-content: space-around;
+}
+.container main .ourTeamSection main .teamProfileContant .teamProfileContantSocialMidias img {
+  cursor: pointer;
+}
 .container footer {
   display: flex;
   flex-direction: column;
