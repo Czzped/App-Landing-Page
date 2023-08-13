@@ -348,6 +348,47 @@
 .container main .ourTeamSection main .teamProfileContant .teamProfileContantSocialMidias img {
   cursor: pointer;
 }
+.container main .ourHappyCostumersSection {
+  text-align: center;
+  padding: 5%;
+  background-image: url(/src/assets/background/bg-img.svg);
+  background-size: 100%;
+  color: #FFF;
+}
+.container main .ourHappyCostumersSection span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.container main .ourHappyCostumersSection span p {
+  width: 50%;
+}
+.container main .ourHappyCostumersSection .swiper {
+  display: flex;
+  flex-direction: column;
+  width: 75vh;
+  gap: 10px;
+}
+.container main .ourHappyCostumersSection .swiper .swiper-wrapper {
+  display: flex;
+}
+.container main .ourHappyCostumersSection .swiper .swiper-wrapper .swiper-slide {
+  color: #232233;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #FFF;
+}
+.container main .ourHappyCostumersSection .swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+.container main .ourHappyCostumersSection .swiper .swiper-pagination span {
+  height: 20px;
+  width: 20px;
+  background-color: #FFF;
+}
 .container footer {
   display: flex;
   flex-direction: column;
@@ -424,24 +465,25 @@
 .container footer .footerMainWrapper .footerBottomWrapperLinksArea div a:hover {
   text-decoration: underline;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea {
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form {
   display: flex;
   flex-direction: column;
-  gap: 15%;
+  height: 100%;
+  gap: 25px;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div {
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div {
   display: flex;
   padding: 0.5%;
   border-radius: 4px;
   background-color: #FFF;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div input {
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div input {
   width: 100%;
   border: none;
   outline: none;
   padding: 2%;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div button {
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div button {
   background-color: #5956E9;
   padding: 2.5%;
   height: 100%;
@@ -450,7 +492,7 @@
   border-radius: 4px;
   outline: none;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea div button:hover {
+.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div button:hover {
   background-color: #4745d8;
 }
 .container footer .footerBottomWrapper {
