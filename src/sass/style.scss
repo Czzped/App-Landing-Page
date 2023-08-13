@@ -549,6 +549,57 @@ $gray-paragraphs-text-color: #6C6C72;
                 }
             }
         }
+
+        .ourRecentBlogSection {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 5%;
+
+            span {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                width: 100%;
+
+                p {
+                    width: 50%;
+                }
+            }
+
+            .blogLinkContainer {
+                display: flex;
+                justify-content: space-around;
+
+                gap: 5%;
+
+                .blogLinkContant {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+
+                    text-decoration: none;
+                    color: $primary-text-color;
+
+                    transition: 0.5s;
+
+                    img {
+                        width: 100%;
+                    }
+
+                    a {
+                        width: 200%;
+                    }
+
+                    &:hover {
+                        opacity: 80%;
+                    }
+                }
+            }
+        }
     }
 
     footer {
