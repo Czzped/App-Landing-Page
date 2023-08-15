@@ -31,16 +31,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  border: 2px solid transparent;
-  transition: 0.2s;
   cursor: pointer;
-}
-.container header .headerTopWrapper .headerTopWrapperContactButtons span:hover {
-  border-bottom-color: #FFF;
-}
-.container header .headerTopWrapper .headerTopWrapperContactButtons span img {
-  width: 18px;
-  height: 18px;
 }
 .container header .headerTopWrapper .headerTopWrapperContactButtons span p {
   color: var(--white, #FFF);
@@ -61,22 +52,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 3.75rem;
-  padding: 2%;
   background-color: #FFF;
   border-radius: 5px;
+  height: 60px;
+  padding: 2%;
 }
 .container header .headerBottomWrapper span {
   display: flex;
   align-items: center;
   gap: 20px;
+  font-size: 20px;
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarButton {
   color: #232233;
   text-decoration: none;
-  height: auto;
-  width: auto;
-  font-size: larger;
   font-style: normal;
   font-weight: 500;
 }
@@ -86,9 +75,13 @@
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton {
   background-color: #5956E9;
-  padding: 5%;
+  padding: 2%;
   color: #FFF;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
   text-decoration: none;
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton:hover {
@@ -99,47 +92,60 @@
   justify-content: center;
   align-items: center;
   background-color: #FFF;
-  padding: 2%;
   width: 12.5rem;
   height: 5.625rem;
   flex-shrink: 0;
   border-radius: 0.3125rem;
 }
+.container main {
+  width: 100%;
+}
 .container main .homeSection {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 5%;
   padding-top: 15%;
-  width: 100%;
-  height: 100%;
-  background-image: url("/./src/assets/background/bg-img.svg");
+  background-image: url("/src/assets/background/bg-img.svg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
 }
 .container main .homeSection .homeSectionLeftWrapper {
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: space-around;
+  width: 50%;
+  height: 75%;
+  gap: 5%;
+  padding: 2%;
   position: absolute;
-  top: 25%;
-  right: 50px;
-  gap: 40px;
-  padding: 5%;
+  right: 30%;
+  top: 10%;
   background-color: #FFF;
 }
 .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
   color: #5956E9;
-  font-size: 3.05188rem;
-  font-style: normal;
-  font-weight: 700;
+  font-size: 48.8301px;
+}
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h2 {
+  font-size: 25px;
 }
 .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant div div img {
+  width: 25%;
   cursor: pointer;
+}
+.container main .homeSection .homeSectionLeftWrapper img {
+  width: 50%;
+}
+.container main .homeSection img {
+  width: 40.375rem;
 }
 .container main .aboutSection {
   display: flex;
@@ -552,6 +558,67 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+
+@media (max-width: 1800px) {
+  .container header {
+    display: flex;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
+    font-size: 32px;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant p {
+    font-size: 15px;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h2 {
+    font-size: 22px;
+  }
+  .container main .homeSection img {
+    width: 120%;
+  }
+}
+@media (max-width: 1440px) {
+  .container header {
+    display: none;
+  }
+  .container main .homeSection {
+    padding-top: 25%;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
+    font-size: 24px;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant p {
+    font-size: 7px;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h2 {
+    font-size: 14px;
+  }
+  .container main .homeSection img {
+    width: 80%;
+  }
+}
+@media (max-width: 780px) {
+  .container main .homeSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+    gap: 20px;
+  }
+  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
+    width: 75%;
+    height: 85%;
+    top: 8%;
+    right: 20%;
+  }
+  .container main .homeSection .homeSectionLeftWrapper img {
+    width: 80%;
+  }
+  .container main .homeSection .homeSectionRigthWrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
