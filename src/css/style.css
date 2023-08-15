@@ -153,15 +153,25 @@
   align-items: center;
   padding: 5%;
   gap: 80px;
+}
+.container main .aboutSection span {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  width: 80%;
 }
 .container main .aboutSection .aboutSectionBottomContainer {
   display: flex;
-  gap: 25%;
+  justify-content: space-between;
+  gap: 20%;
+}
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerLeftWrapper {
+  width: 75%;
 }
 .container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper {
   display: flex;
   flex-direction: column;
+  align-items: start;
   gap: 80px;
 }
 .container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant {
@@ -618,6 +628,13 @@
     display: flex;
     justify-content: center;
     padding-left: 20%;
+  }
+  .container main .aboutSectionBottomContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container main .aboutSectionBottomContainer .aboutSectionBottomContainerLeftWrapper {
+    padding-bottom: 10%;
   }
 }
 
