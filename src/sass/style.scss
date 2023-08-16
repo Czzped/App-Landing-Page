@@ -284,6 +284,14 @@ $gray-paragraphs-text-color: #6C6C72;
 
             gap: 50px;
 
+            span {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                width: 80%;
+            }
+
             .featuresSectionAppInterface {
                 display: grid;
                 gap: 2%;
@@ -331,21 +339,15 @@ $gray-paragraphs-text-color: #6C6C72;
                 }
 
                 .featuresSectionAppInterfaceSurfacesTextBox {
-                    display: flex;
-                    flex-direction: column;
                     align-items: center;
                 }
 
                 .featuresSectionAppInterfaceLeftSideTextBox {
-                    display: flex;
-                    flex-direction: column;
                     align-items: end;
                     text-align: end;
                 }
 
                 .featuresSectionAppInterfaceRigthSideTextBox {
-                    display: flex;
-                    flex-direction: column;
                     align-items: start;
                     text-align: start;
                 }
@@ -918,6 +920,39 @@ $gray-paragraphs-text-color: #6C6C72;
 
                 .aboutSectionBottomContainerLeftWrapper {
                     padding-bottom: 10%;
+                }
+            }
+
+            .featuresSection {
+                .featuresSectionAppInterface {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: center;
+
+                    gap: 50px;
+
+                    .featuresSectionAppInterfaceSurfacesTextBox {
+                        align-items: center;
+
+                        padding: 0;
+
+                        width: 100%;
+                    }
+
+                    .featuresSectionAppInterfaceLeftSideTextBox {
+                        align-items: center;
+                        text-align: center;
+
+                        padding: 0;
+                    }
+
+                    .featuresSectionAppInterfaceRigthSideTextBox {
+                        align-items: center;
+                        text-align: center;
+
+                        padding: 0;
+                    }
                 }
             }
         }

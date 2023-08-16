@@ -197,6 +197,12 @@
   padding: 10%;
   gap: 50px;
 }
+.container main .featuresSection span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
 .container main .featuresSection .featuresSectionAppInterface {
   display: grid;
   gap: 2%;
@@ -236,19 +242,13 @@
   grid-column: 1/4;
 }
 .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
-  display: flex;
-  flex-direction: column;
   align-items: end;
   text-align: end;
 }
 .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
-  display: flex;
-  flex-direction: column;
   align-items: start;
   text-align: start;
 }
@@ -635,6 +635,28 @@
   }
   .container main .aboutSectionBottomContainer .aboutSectionBottomContainerLeftWrapper {
     padding-bottom: 10%;
+  }
+  .container main .featuresSection .featuresSectionAppInterface {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+  }
+  .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+  .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
+    align-items: center;
+    text-align: center;
+    padding: 0;
   }
 }
 
