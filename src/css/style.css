@@ -394,7 +394,7 @@
 .container main .ourHappyCostumersSection .swiper {
   display: flex;
   flex-direction: column;
-  width: 75vh;
+  width: 50%;
   gap: 10px;
 }
 .container main .ourHappyCostumersSection .swiper .swiper-wrapper {
@@ -673,6 +673,9 @@
   }
   .container main .teamProfileContainer {
     flex-direction: column;
+  }
+  .container main .ourHappyCostumersSection .swiper {
+    width: 100%;
   }
 }
 
