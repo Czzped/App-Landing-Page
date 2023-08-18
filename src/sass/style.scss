@@ -457,9 +457,6 @@ $gray-paragraphs-text-color: #6C6C72;
 
             position: relative;
 
-            height: 100%;
-            width: 100%;
-
             text-align: center;
 
             color: #FFF;
@@ -467,11 +464,12 @@ $gray-paragraphs-text-color: #6C6C72;
             main {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
                 align-items: center;
 
+                padding: 5%;
+
                 width: 100%;
-                min-height: 30vh;
+                min-height: 45vh;
 
                 background-image: url("/src/assets/background/bg-img.svg");
                 background-size: 100%;
@@ -483,9 +481,14 @@ $gray-paragraphs-text-color: #6C6C72;
 
             img {
                 position: absolute;
+
+                height: 100%;
+
+                padding: 2%;
+
                 top: 50%;
-                padding-top: 2.5%;
-                width: 32%;
+
+                width: 100%;
             }
         }
 
