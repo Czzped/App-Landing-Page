@@ -562,7 +562,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 display: flex;
                 flex-direction: column;
 
-                width: 50%;
+                width: 35%;
 
                 gap: 10px;
 
@@ -620,7 +620,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 display: flex;
                 justify-content: space-around;
 
-                gap: 5%;
+                gap: 10px;
 
                 .blogLinkContant {
                     display: flex;
@@ -987,6 +987,9 @@ $gray-paragraphs-text-color: #6C6C72;
                 }
             }
 
+            .blogLinkContainer {
+                flex-direction: column;
+            }
         }
     }
 }

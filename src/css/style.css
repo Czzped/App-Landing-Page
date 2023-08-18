@@ -394,7 +394,7 @@
 .container main .ourHappyCostumersSection .swiper {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 35%;
   gap: 10px;
 }
 .container main .ourHappyCostumersSection .swiper .swiper-wrapper {
@@ -435,7 +435,7 @@
 .container main .ourRecentBlogSection .blogLinkContainer {
   display: flex;
   justify-content: space-around;
-  gap: 5%;
+  gap: 10px;
 }
 .container main .ourRecentBlogSection .blogLinkContainer .blogLinkContant {
   display: flex;
@@ -676,6 +676,9 @@
   }
   .container main .ourHappyCostumersSection .swiper {
     width: 100%;
+  }
+  .container main .blogLinkContainer {
+    flex-direction: column;
   }
 }
 
