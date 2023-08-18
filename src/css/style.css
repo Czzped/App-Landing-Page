@@ -267,12 +267,13 @@
 }
 .container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper {
   display: flex;
-  gap: 10%;
+  gap: 50px;
 }
 .container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox {
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  width: 100%;
+  gap: 50px;
   text-align: start;
 }
 .container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .downloadTextBoxContant {
@@ -281,31 +282,38 @@
 }
 .container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .downloadTextBoxContant div {
   display: flex;
-  gap: 10%;
+  gap: 2%;
   cursor: pointer;
-  width: 20%;
+  width: 100%;
+}
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .downloadTextBoxContant div img {
+  min-width: 25%;
 }
 .container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox {
   display: flex;
   gap: 5%;
 }
-.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox div {
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox .ratingTextBoxContant {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  text-align: center;
+  min-width: 30%;
   padding: 2%;
   color: #FFF;
   border-radius: 0.625rem;
   gap: 15px;
   background-color: #5956E9;
 }
-.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox div img {
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox .ratingTextBoxContant img {
   width: 25px;
 }
-.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper img {
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperRightImgBox {
   width: 100%;
+}
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperRightImgBox img {
+  width: 80%;
 }
 .container main .howToUseSection {
   display: flex;
@@ -558,14 +566,12 @@
 
 .gray-paragraphs {
   color: #6C6C72;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 }
 
 .white-paragraphs {
   color: #FFF;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
 }
@@ -657,6 +663,10 @@
     align-items: center;
     text-align: center;
     padding: 0;
+  }
+  .container main .appInterfaceSectionBottomDownloadAppWrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
