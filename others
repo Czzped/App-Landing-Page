@@ -1,13 +1,3 @@
-<section class="howToUseSection">
-    <main>
-        <h1>HOW TO USE THE APP PERFECTLY</h1>
-        <br>
-        <p class="white-paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
-            ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
-            ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
-    </main>
-    <img src="./assets/background/notbook-bg-img.svg" alt="notbook-bg">
-</section>
 <section class="ourTeamSection">
     <span>
         <h1>OUR REATIVE TEAM</h1>

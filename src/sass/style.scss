@@ -516,9 +516,12 @@ $gray-paragraphs-text-color: #6C6C72;
 
             main {
                 display: flex;
-                gap: 5%;
+                gap: 50px;
 
                 .teamProfileContant {
+                    .teamProfileImg {
+                        width: 50%;
+                    }
 
                     .teamProfileContantSocialMidias {
                         display: flex;
@@ -526,6 +529,7 @@ $gray-paragraphs-text-color: #6C6C72;
 
                         img {
                             cursor: pointer;
+                            width: 100%;
                         }
                     }
                 }
@@ -972,6 +976,10 @@ $gray-paragraphs-text-color: #6C6C72;
             .appInterfaceSectionBottomDownloadAppWrapper {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .teamProfileContainer {
+                flex-direction: column;
             }
 
         }
