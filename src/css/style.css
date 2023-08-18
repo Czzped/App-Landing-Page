@@ -163,7 +163,7 @@
 .container main .aboutSection .aboutSectionBottomContainer {
   display: flex;
   justify-content: space-between;
-  gap: 20%;
+  gap: 50px;
 }
 .container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerLeftWrapper {
   width: 75%;
@@ -331,7 +331,7 @@
   width: 100%;
   min-height: 45vh;
   background-image: url("/src/assets/background/bg-img.svg");
-  background-size: 100%;
+  background-size: cover;
 }
 .container main .howToUseSection main p {
   width: 50%;
@@ -379,7 +379,7 @@
   text-align: center;
   padding: 5%;
   background-image: url(/src/assets/background/bg-img.svg);
-  background-size: 100%;
+  background-size: cover;
   color: #FFF;
 }
 .container main .ourHappyCostumersSection span {
@@ -421,6 +421,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 5%;
+  padding-bottom: 20%;
 }
 .container main .ourRecentBlogSection span {
   display: flex;
@@ -457,98 +458,104 @@
 .container footer {
   display: flex;
   flex-direction: column;
-  gap: 100px;
-  padding: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-  width: 100%;
-  background-color: #232233;
+  align-items: center;
+  position: relative;
 }
 .container footer .footerTopWrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 8%;
+  gap: 20px;
+  position: absolute;
+  padding: 5%;
   background-color: #FFF;
   border-radius: 30px;
-  width: 100%;
+  width: 80%;
+  bottom: 90%;
 }
-.container footer .footerTopWrapper .footerTopWrapperLeftTextBox, .container footer .footerTopWrapper .footerTopWrapperRigthTextBox {
+.container footer .footerTopWrapper hr {
+  display: flex;
+  border: 2px solid #6C6C72;
+}
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox, .container footer .footerTopWrapper .footerTopWrapperLeftTextBox {
   display: flex;
   align-items: center;
   gap: 2%;
   width: 100%;
 }
-.container footer .footerTopWrapper .footerTopWrapperLeftTextBox span, .container footer .footerTopWrapper .footerTopWrapperRigthTextBox span {
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox span, .container footer .footerTopWrapper .footerTopWrapperLeftTextBox span {
   background-color: #5956E9;
   padding: 4%;
   border-radius: 50px;
 }
-.container footer .footerTopWrapper .footerTopWrapperLeftTextBox span img, .container footer .footerTopWrapper .footerTopWrapperRigthTextBox span img {
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox span img, .container footer .footerTopWrapper .footerTopWrapperLeftTextBox span img {
   width: 25px;
-}
-.container footer .footerTopWrapper .footerTopWrapperRigthTextBox {
-  border-left: 3px solid #6C6C72;
-  padding-left: 2%;
 }
 .container footer .footerMainWrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  background-color: #232233;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  width: 100%;
   color: #FFF;
-  gap: 10%;
+  gap: 50px;
 }
 .container footer .footerMainWrapper div {
   width: 100%;
 }
-.container footer .footerMainWrapper .footerBottomWrapperLogoArea {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer {
+  display: flex;
+  gap: 50px;
+}
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLogoArea {
   display: flex;
   flex-direction: column;
   height: 100%;
   gap: 25px;
 }
-.container footer .footerMainWrapper .footerBottomWrapperLogoArea div {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLogoArea div {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
 }
-.container footer .footerMainWrapper .footerBottomWrapperLinksArea {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea {
   display: flex;
   flex-direction: column;
-  gap: 10%;
 }
-.container footer .footerMainWrapper .footerBottomWrapperLinksArea div {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea div {
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 15%;
+  gap: 20px;
 }
-.container footer .footerMainWrapper .footerBottomWrapperLinksArea div a {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea div a {
   text-decoration: none;
   color: #FFF;
 }
-.container footer .footerMainWrapper .footerBottomWrapperLinksArea div a:hover {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea div a:hover {
   text-decoration: underline;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form {
   display: flex;
   flex-direction: column;
   height: 100%;
   gap: 25px;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div {
   display: flex;
   padding: 0.5%;
   border-radius: 4px;
   background-color: #FFF;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div input {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div input {
   width: 100%;
   border: none;
   outline: none;
   padding: 2%;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div button {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div button {
   background-color: #5956E9;
   padding: 2.5%;
   height: 100%;
@@ -557,10 +564,10 @@
   border-radius: 4px;
   outline: none;
 }
-.container footer .footerMainWrapper .footerBottomWrapperNewsLetterArea form div button:hover {
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div button:hover {
   background-color: #4745d8;
 }
-.container footer .footerBottomWrapper {
+.container footer .footerMainWrapper .footerBottomWrapper {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -617,68 +624,72 @@
   }
 }
 @media (max-width: 780px) {
-  .container main .homeSection {
+  .homeSection {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 40%;
     gap: 20px;
   }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
+  .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
     width: 75%;
     height: 85%;
     top: 8%;
     right: 20%;
   }
-  .container main .homeSection .homeSectionLeftWrapper img {
+  .homeSection .homeSectionLeftWrapper img {
     width: 80%;
   }
-  .container main .homeSection .homeSectionRigthWrapper {
+  .homeSection .homeSectionRigthWrapper {
     display: flex;
     justify-content: center;
     padding-left: 20%;
   }
-  .container main .aboutSectionBottomContainer {
+  .aboutSectionBottomContainer {
     flex-direction: column;
     align-items: center;
   }
-  .container main .aboutSectionBottomContainer .aboutSectionBottomContainerLeftWrapper {
-    padding-bottom: 10%;
-  }
-  .container main .featuresSection .featuresSectionAppInterface {
+  .featuresSection .featuresSectionAppInterface {
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 50px;
   }
-  .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
+  .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
     align-items: center;
     padding: 0;
     width: 100%;
   }
-  .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
+  .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
     align-items: center;
     text-align: center;
     padding: 0;
   }
-  .container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
+  .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
     align-items: center;
     text-align: center;
     padding: 0;
   }
-  .container main .appInterfaceSectionBottomDownloadAppWrapper {
+  .appInterfaceSectionBottomDownloadAppWrapper {
     flex-direction: column;
     align-items: center;
   }
-  .container main .teamProfileContainer {
+  .teamProfileContainer {
     flex-direction: column;
   }
-  .container main .ourHappyCostumersSection .swiper {
+  .ourHappyCostumersSection .swiper {
     width: 100%;
   }
-  .container main .blogLinkContainer {
+  .blogLinkContainer {
     flex-direction: column;
+  }
+  .footerTopWrapper {
+    flex-direction: column;
+  }
+  .footerMainWrapperLinksContainer {
+    flex-direction: column;
+    padding-top: 25%;
   }
 }
 

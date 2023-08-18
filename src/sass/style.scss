@@ -236,7 +236,7 @@ $gray-paragraphs-text-color: #6C6C72;
             .aboutSectionBottomContainer {
                 display: flex;
                 justify-content: space-between;
-                gap: 20%;
+                gap: 50px;
 
 
                 .aboutSectionBottomContainerLeftWrapper {
@@ -472,7 +472,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 min-height: 45vh;
 
                 background-image: url("/src/assets/background/bg-img.svg");
-                background-size: 100%;
+                background-size: cover;
 
                 p {
                     width: 50%;
@@ -542,7 +542,7 @@ $gray-paragraphs-text-color: #6C6C72;
             padding: 5%;
 
             background-image: url(/src/assets/background/bg-img.svg);
-            background-size: 100%;
+            background-size: cover;
 
             color: #FFF;
 
@@ -602,6 +602,7 @@ $gray-paragraphs-text-color: #6C6C72;
             justify-content: center;
 
             padding: 5%;
+            padding-bottom: 20%;
 
             span {
                 display: flex;
@@ -651,31 +652,34 @@ $gray-paragraphs-text-color: #6C6C72;
     footer {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
-        gap: 100px;
-
-        padding: 2%;
-        padding-left: 10%;
-        padding-right: 10%;
-        width: 100%;
-        background-color: $primary-text-color;
+        position: relative;
 
         .footerTopWrapper {
             display: flex;
-            align-items: center;
-            justify-content: center;
 
-            position: relative;
+            gap: 20px;
 
-            padding: 8%;
+            position: absolute;
+
+            padding: 5%;
 
             background-color: #FFF;
 
             border-radius: 30px;
 
-            width: 100%;
+            width: 80%;
 
-            .footerTopWrapperLeftTextBox {
+            bottom: 90%;
+
+            hr {
+                display: flex;
+
+                border: 2px solid $gray-paragraphs-text-color;
+            }
+
+            .footerTopWrapperRigthTextBox {
                 display: flex;
                 align-items: center;
 
@@ -694,120 +698,133 @@ $gray-paragraphs-text-color: #6C6C72;
                 }
             }
 
-            .footerTopWrapperRigthTextBox {
-                @extend .footerTopWrapperLeftTextBox;
-                border-left: 3px solid $gray-paragraphs-text-color;
-                padding-left: 2%;
+            .footerTopWrapperLeftTextBox {
+                @extend .footerTopWrapperRigthTextBox
             }
         }
 
         .footerMainWrapper {
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
+
+            background-color: $primary-text-color;
+
+            padding: 2%;
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 10%;
+
+            width: 100%;
+
             color: #FFF;
-            gap: 10%;
+
+            gap: 50px;
 
             div {
                 width: 100%;
             }
 
-            .footerBottomWrapperLogoArea {
+            .footerMainWrapperLinksContainer {
                 display: flex;
-                flex-direction: column;
-                height: 100%;
+                gap: 50px;
 
-                gap: 25px;
-
-                div {
-                    display: flex;
-                    justify-content: space-between;
-
-                    width: 80%;
-                }
-            }
-
-            .footerBottomWrapperLinksArea {
-                display: flex;
-                flex-direction: column;
-                gap: 10%;
-
-                div {
+                .footerBottomWrapperLogoArea {
                     display: flex;
                     flex-direction: column;
-
-                    height: 100%;
-
-                    gap: 15%;
-
-                    a {
-                        text-decoration: none;
-                        color: #FFF;
-
-                        &:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
-
-            .footerBottomWrapperNewsLetterArea {
-
-                form {
-                    display: flex;
-                    flex-direction: column;
-
                     height: 100%;
 
                     gap: 25px;
 
                     div {
                         display: flex;
+                        justify-content: space-between;
 
-                        padding: 0.5%;
+                        width: 100%;
+                    }
+                }
 
-                        border-radius: 4px;
+                .footerBottomWrapperLinksArea {
+                    display: flex;
+                    flex-direction: column;
 
-                        background-color: #FFF;
+                    div {
+                        display: flex;
+                        flex-direction: column;
 
-                        input {
-                            width: 100%;
+                        height: 100%;
 
-                            border: none;
-                            outline: none;
+                        gap: 20px;
 
-                            padding: 2%;
-                        }
-
-                        button {
-                            background-color: $primary-color;
-
-                            padding: 2.5%;
-
-                            height: 100%;
-
-                            cursor: pointer;
-
-                            border: none;
-                            border-radius: 4px;
-                            outline: none;
+                        a {
+                            text-decoration: none;
+                            color: #FFF;
 
                             &:hover {
-                                background-color: $secundary-color;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .footerBottomWrapperNewsLetterArea {
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+
+                        height: 100%;
+
+                        gap: 25px;
+
+                        div {
+                            display: flex;
+
+                            padding: 0.5%;
+
+                            border-radius: 4px;
+
+                            background-color: #FFF;
+
+                            input {
+                                width: 100%;
+
+                                border: none;
+                                outline: none;
+
+                                padding: 2%;
+                            }
+
+                            button {
+                                background-color: $primary-color;
+
+                                padding: 2.5%;
+
+                                height: 100%;
+
+                                cursor: pointer;
+
+                                border: none;
+                                border-radius: 4px;
+                                outline: none;
+
+                                &:hover {
+                                    background-color: $secundary-color;
+                                }
                             }
                         }
                     }
                 }
             }
+
+            .footerBottomWrapper {
+                display: flex;
+                flex-direction: column;
+
+                gap: 20px;
+                text-align: center;
+            }
         }
-
-        .footerBottomWrapper {
-            display: flex;
-            flex-direction: column;
-
-            gap: 20px;
-            text-align: center;
-        }
-
     }
 }
 
@@ -894,102 +911,105 @@ $gray-paragraphs-text-color: #6C6C72;
 }
 
 @media (max-width: 780px) {
-    .container {
-        main {
-            .homeSection {
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+    .homeSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-                padding-top: 40%;
+        padding-top: 40%;
 
-                gap: 20px;
+        gap: 20px;
 
-                .homeSectionLeftWrapper {
-                    .homeSectionLeftWrapperBoxContant {
-                        width: 75%;
-                        height: 85%;
+        .homeSectionLeftWrapper {
+            .homeSectionLeftWrapperBoxContant {
+                width: 75%;
+                height: 85%;
 
-                        top: 8%;
-                        right: 20%;
-                    }
-
-                    img {
-                        width: 80%;
-                    }
-                }
-
-                .homeSectionRigthWrapper {
-                    display: flex;
-                    justify-content: center;
-
-                    padding-left: 20%;
-                }
-
-
+                top: 8%;
+                right: 20%;
             }
 
-            .aboutSectionBottomContainer {
-                flex-direction: column;
-                align-items: center;
-
-                .aboutSectionBottomContainerLeftWrapper {
-                    padding-bottom: 10%;
-                }
-            }
-
-            .featuresSection {
-                .featuresSectionAppInterface {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: center;
-
-                    gap: 50px;
-
-                    .featuresSectionAppInterfaceSurfacesTextBox {
-                        align-items: center;
-
-                        padding: 0;
-
-                        width: 100%;
-                    }
-
-                    .featuresSectionAppInterfaceLeftSideTextBox {
-                        align-items: center;
-                        text-align: center;
-
-                        padding: 0;
-                    }
-
-                    .featuresSectionAppInterfaceRigthSideTextBox {
-                        align-items: center;
-                        text-align: center;
-
-                        padding: 0;
-                    }
-                }
-            }
-
-
-            .appInterfaceSectionBottomDownloadAppWrapper {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .teamProfileContainer {
-                flex-direction: column;
-            }
-
-            .ourHappyCostumersSection {
-                .swiper {
-                    width: 100%;
-                }
-            }
-
-            .blogLinkContainer {
-                flex-direction: column;
+            img {
+                width: 80%;
             }
         }
+
+        .homeSectionRigthWrapper {
+            display: flex;
+            justify-content: center;
+
+            padding-left: 20%;
+        }
+
+
+    }
+
+    .aboutSectionBottomContainer {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .featuresSection {
+        .featuresSectionAppInterface {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+
+            gap: 50px;
+
+            .featuresSectionAppInterfaceSurfacesTextBox {
+                align-items: center;
+
+                padding: 0;
+
+                width: 100%;
+            }
+
+            .featuresSectionAppInterfaceLeftSideTextBox {
+                align-items: center;
+                text-align: center;
+
+                padding: 0;
+            }
+
+            .featuresSectionAppInterfaceRigthSideTextBox {
+                align-items: center;
+                text-align: center;
+
+                padding: 0;
+            }
+        }
+    }
+
+
+    .appInterfaceSectionBottomDownloadAppWrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teamProfileContainer {
+        flex-direction: column;
+    }
+
+    .ourHappyCostumersSection {
+        .swiper {
+            width: 100%;
+        }
+    }
+
+    .blogLinkContainer {
+        flex-direction: column;
+    }
+
+    .footerTopWrapper {
+        flex-direction: column;
+    }
+
+    .footerMainWrapperLinksContainer {
+        flex-direction: column;
+
+        padding-top: 25%;
     }
 }
