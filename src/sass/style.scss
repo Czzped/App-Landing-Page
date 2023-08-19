@@ -149,6 +149,8 @@ $gray-paragraphs-text-color: #6C6C72;
             display: flex;
             justify-content: center;
 
+            gap: 50px;
+
             padding: 5%;
             padding-top: 15%;
 
@@ -171,47 +173,46 @@ $gray-paragraphs-text-color: #6C6C72;
 
                     justify-content: space-around;
 
-                    width: 50%;
-                    height: 75%;
+                    width: 75%;
+                    min-height: 75%;
 
                     gap: 5%;
 
                     padding: 2%;
 
                     position: absolute;
-                    right: 30%;
+                    right: 20%;
                     top: 10%;
-
 
                     background-color: #FFF;
 
-                    h1 {
-                        color: $primary-color;
-                        font-size: 48.8301px;
-                    }
-
-                    h2 {
-                        font-size: 25px;
-                    }
 
                     div {
                         div {
                             img {
-                                width: 25%;
+                                width: 2095%;
 
                                 cursor: pointer;
                             }
                         }
                     }
+
+                    h1 {
+                        color: $primary-color
+                    }
                 }
 
                 img {
-                    width: 50%;
+                    width: 75%;
                 }
             }
 
-            img {
-                width: 40.375rem;
+            .homeSectionRigthWrapper {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
             }
 
         }
@@ -294,7 +295,7 @@ $gray-paragraphs-text-color: #6C6C72;
 
             .featuresSectionAppInterface {
                 display: grid;
-                gap: 2%;
+                gap: 25px;
                 grid-template-columns: repeat(3, 1fr);
 
                 div {
@@ -465,6 +466,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
 
                 padding: 5%;
 
@@ -475,7 +477,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 background-size: cover;
 
                 p {
-                    width: 50%;
+                    width: 70%;
                 }
             }
 
@@ -483,8 +485,6 @@ $gray-paragraphs-text-color: #6C6C72;
                 position: absolute;
 
                 height: 100%;
-
-                padding: 2%;
 
                 top: 50%;
 
@@ -554,7 +554,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 width: 100%;
 
                 p {
-                    width: 50%;
+                    width: 70%;
                 }
             }
 
@@ -602,7 +602,6 @@ $gray-paragraphs-text-color: #6C6C72;
             justify-content: center;
 
             padding: 5%;
-            padding-bottom: 20%;
 
             span {
                 display: flex;
@@ -620,6 +619,8 @@ $gray-paragraphs-text-color: #6C6C72;
             .blogLinkContainer {
                 display: flex;
                 justify-content: space-around;
+
+                padding-bottom: 10%;
 
                 gap: 10px;
 
@@ -683,9 +684,9 @@ $gray-paragraphs-text-color: #6C6C72;
                 display: flex;
                 align-items: center;
 
-                gap: 2%;
-
                 width: 100%;
+
+                gap: 10px;
 
                 span {
                     background-color: $primary-color;
@@ -840,75 +841,6 @@ $gray-paragraphs-text-color: #6C6C72;
     font-weight: 400;
 }
 
-@media (max-width: 1800px) {
-    .container {
-        header {
-            display: flex;
-        }
-
-        main {
-            .homeSection {
-                .homeSectionLeftWrapper {
-
-                    .homeSectionLeftWrapperBoxContant {
-
-                        h1 {
-                            font-size: 32px;
-                        }
-
-                        p {
-                            font-size: 15px;
-                        }
-
-                        h2 {
-                            font-size: 22px;
-                        }
-                    }
-                }
-
-                img {
-                    width: 120%;
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1440px) {
-    .container {
-        header {
-            display: none;
-        }
-
-        main {
-            .homeSection {
-                padding-top: 25%;
-
-                .homeSectionLeftWrapper {
-
-                    .homeSectionLeftWrapperBoxContant {
-
-                        h1 {
-                            font-size: 24px;
-                        }
-
-                        p {
-                            font-size: 7px;
-                        }
-
-                        h2 {
-                            font-size: 14px;
-                        }
-                    }
-                }
-
-                img {
-                    width: 80%;
-                }
-            }
-        }
-    }
-}
 
 @media (max-width: 780px) {
     .homeSection {
@@ -950,36 +882,16 @@ $gray-paragraphs-text-color: #6C6C72;
 
     }
 
-    .featuresSection {
-        .featuresSectionAppInterface {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: center;
 
-            gap: 50px;
+    .featuresSectionAppInterface {
+        display: flex !important;
+        flex-direction: column;
 
-            .featuresSectionAppInterfaceSurfacesTextBox {
-                align-items: center;
+        .box {
+            text-align: center !important;
+            align-items: center !important;
 
-                padding: 0;
-
-                width: 100%;
-            }
-
-            .featuresSectionAppInterfaceLeftSideTextBox {
-                align-items: center;
-                text-align: center;
-
-                padding: 0;
-            }
-
-            .featuresSectionAppInterfaceRigthSideTextBox {
-                align-items: center;
-                text-align: center;
-
-                padding: 0;
-            }
+            padding: 0 !important;
         }
     }
 
@@ -995,16 +907,27 @@ $gray-paragraphs-text-color: #6C6C72;
 
     .ourHappyCostumersSection {
         .swiper {
-            width: 100%;
+            width: 100% !important;
         }
     }
 
     .blogLinkContainer {
         flex-direction: column;
+
+        padding-bottom: 50% !important;
     }
 
     .footerTopWrapper {
         flex-direction: column;
+        align-items: center;
+
+        div {
+            flex-direction: column;
+        }
+
+        hr {
+            width: 50%;
+        }
     }
 
     .footerMainWrapperLinksContainer {

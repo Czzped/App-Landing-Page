@@ -103,6 +103,7 @@
 .container main .homeSection {
   display: flex;
   justify-content: center;
+  gap: 50px;
   padding: 5%;
   padding-top: 15%;
   background-image: url("/src/assets/background/bg-img.svg");
@@ -121,31 +122,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 50%;
-  height: 75%;
+  width: 75%;
+  min-height: 75%;
   gap: 5%;
   padding: 2%;
   position: absolute;
-  right: 30%;
+  right: 20%;
   top: 10%;
   background-color: #FFF;
 }
-.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
-  color: #5956E9;
-  font-size: 48.8301px;
-}
-.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h2 {
-  font-size: 25px;
-}
 .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant div div img {
-  width: 25%;
+  width: 2095%;
   cursor: pointer;
 }
-.container main .homeSection .homeSectionLeftWrapper img {
-  width: 50%;
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
+  color: #5956E9;
 }
-.container main .homeSection img {
-  width: 40.375rem;
+.container main .homeSection .homeSectionLeftWrapper img {
+  width: 75%;
+}
+.container main .homeSection .homeSectionRigthWrapper {
+  width: 100%;
+}
+.container main .homeSection .homeSectionRigthWrapper img {
+  width: 100%;
 }
 .container main .aboutSection {
   display: flex;
@@ -205,7 +205,7 @@
 }
 .container main .featuresSection .featuresSectionAppInterface {
   display: grid;
-  gap: 2%;
+  gap: 25px;
   grid-template-columns: repeat(3, 1fr);
 }
 .container main .featuresSection .featuresSectionAppInterface div {
@@ -327,6 +327,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 5%;
   width: 100%;
   min-height: 45vh;
@@ -334,12 +335,11 @@
   background-size: cover;
 }
 .container main .howToUseSection main p {
-  width: 50%;
+  width: 70%;
 }
 .container main .howToUseSection img {
   position: absolute;
   height: 100%;
-  padding: 2%;
   top: 50%;
   width: 100%;
 }
@@ -389,7 +389,7 @@
   width: 100%;
 }
 .container main .ourHappyCostumersSection span p {
-  width: 50%;
+  width: 70%;
 }
 .container main .ourHappyCostumersSection .swiper {
   display: flex;
@@ -421,7 +421,6 @@
   flex-direction: column;
   justify-content: center;
   padding: 5%;
-  padding-bottom: 20%;
 }
 .container main .ourRecentBlogSection span {
   display: flex;
@@ -436,6 +435,7 @@
 .container main .ourRecentBlogSection .blogLinkContainer {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 10%;
   gap: 10px;
 }
 .container main .ourRecentBlogSection .blogLinkContainer .blogLinkContant {
@@ -478,8 +478,8 @@
 .container footer .footerTopWrapper .footerTopWrapperRigthTextBox, .container footer .footerTopWrapper .footerTopWrapperLeftTextBox {
   display: flex;
   align-items: center;
-  gap: 2%;
   width: 100%;
+  gap: 10px;
 }
 .container footer .footerTopWrapper .footerTopWrapperRigthTextBox span, .container footer .footerTopWrapper .footerTopWrapperLeftTextBox span {
   background-color: #5956E9;
@@ -586,43 +586,6 @@
   font-weight: 400;
 }
 
-@media (max-width: 1800px) {
-  .container header {
-    display: flex;
-  }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
-    font-size: 32px;
-  }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant p {
-    font-size: 15px;
-  }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h2 {
-    font-size: 22px;
-  }
-  .container main .homeSection img {
-    width: 120%;
-  }
-}
-@media (max-width: 1440px) {
-  .container header {
-    display: none;
-  }
-  .container main .homeSection {
-    padding-top: 25%;
-  }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
-    font-size: 24px;
-  }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant p {
-    font-size: 7px;
-  }
-  .container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h2 {
-    font-size: 14px;
-  }
-  .container main .homeSection img {
-    width: 80%;
-  }
-}
 @media (max-width: 780px) {
   .homeSection {
     flex-direction: column;
@@ -649,27 +612,14 @@
     flex-direction: column;
     align-items: center;
   }
-  .featuresSection .featuresSectionAppInterface {
-    display: flex;
+  .featuresSectionAppInterface {
+    display: flex !important;
     flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 50px;
   }
-  .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
-    align-items: center;
-    padding: 0;
-    width: 100%;
-  }
-  .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
-    align-items: center;
-    text-align: center;
-    padding: 0;
-  }
-  .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
-    align-items: center;
-    text-align: center;
-    padding: 0;
+  .featuresSectionAppInterface .box {
+    text-align: center !important;
+    align-items: center !important;
+    padding: 0 !important;
   }
   .appInterfaceSectionBottomDownloadAppWrapper {
     flex-direction: column;
@@ -679,13 +629,21 @@
     flex-direction: column;
   }
   .ourHappyCostumersSection .swiper {
-    width: 100%;
+    width: 100% !important;
   }
   .blogLinkContainer {
     flex-direction: column;
+    padding-bottom: 50% !important;
   }
   .footerTopWrapper {
     flex-direction: column;
+    align-items: center;
+  }
+  .footerTopWrapper div {
+    flex-direction: column;
+  }
+  .footerTopWrapper hr {
+    width: 50%;
   }
   .footerMainWrapperLinksContainer {
     flex-direction: column;
