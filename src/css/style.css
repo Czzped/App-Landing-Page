@@ -15,8 +15,7 @@
   flex-direction: column;
   position: absolute;
   padding: 2%;
-  gap: 20px;
-  width: 80%;
+  width: 90%;
 }
 .container header .headerTopWrapper {
   display: flex;
@@ -54,14 +53,16 @@
   align-items: center;
   background-color: #FFF;
   border-radius: 5px;
+  gap: 5px;
   height: 60px;
-  padding: 2%;
+  padding: min(35px, 2%);
+  margin-top: 20px;
 }
 .container header .headerBottomWrapper span {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   gap: 20px;
-  font-size: 20px;
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarButton {
   color: #232233;
@@ -74,18 +75,28 @@
   text-decoration-line: underline;
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton {
-  background-color: #5956E9;
-  padding: 2%;
-  color: #FFF;
-  border-radius: 5px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 3rem;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #5956E9;
+  min-width: 72px;
+  min-height: 34px;
+  max-height: 90px;
+  padding: 2%;
+  border-radius: 5px;
+}
+.container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton a {
   text-decoration: none;
+  color: #FFF;
+  margin: 2px;
+  font-size: min(20px, 1.5vw);
 }
 .container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton:hover {
   background-color: #4745d8;
+}
+.container header .headerBottomWrapper .menuLine {
+  display: none;
 }
 .container header .headerBottomWrapper .headerBottomWrapperApollyButton {
   display: flex;
@@ -97,13 +108,23 @@
   flex-shrink: 0;
   border-radius: 0.3125rem;
 }
+.container header .headerBottomWrapper .headerBottomWrapperApollyButton a {
+  text-align: center;
+  width: 100%;
+}
+.container header .headerBottomWrapper .headerBottomWrapperApollyButton a img {
+  width: 80%;
+}
+.container header a {
+  font-size: min(20px, 1.5vw);
+}
 .container main {
   width: 100%;
 }
 .container main .homeSection {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
   padding: 5%;
   padding-top: 15%;
   background-image: url("/src/assets/background/bg-img.svg");
@@ -125,8 +146,8 @@
   width: 75%;
   min-height: 75%;
   gap: 5%;
-  padding: 2%;
   position: absolute;
+  padding: 2%;
   right: 20%;
   top: 10%;
   background-color: #FFF;
@@ -460,6 +481,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 100%;
 }
 .container footer .footerTopWrapper {
   display: flex;
@@ -558,7 +580,6 @@
 .container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div button {
   background-color: #5956E9;
   padding: 2.5%;
-  height: 100%;
   cursor: pointer;
   border: none;
   border-radius: 4px;
@@ -573,6 +594,34 @@
   gap: 20px;
   text-align: center;
 }
+.container .unactivatedHambugerMenuWrapperButtons {
+  display: none;
+}
+.container .activatedHambugerMenuWrapper {
+  display: flex !important;
+  justify-content: end;
+  position: absolute;
+  width: 100%;
+}
+.container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  position: absolute;
+  gap: 25px;
+  background-color: #FFF;
+  width: 50vw;
+}
+.container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons a {
+  color: #232233;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons a:hover {
+  color: #5956E9;
+  text-decoration-line: underline;
+}
 
 .gray-paragraphs {
   color: #6C6C72;
@@ -586,13 +635,28 @@
   font-weight: 400;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
+  .headerTopWrapper {
+    display: none !important;
+  }
+  .headerBottomWrapperNavBarButton {
+    display: none !important;
+  }
+  .headerBottomWrapper {
+    height: 2.5rem !important;
+  }
+  .headerBottomWrapper .headerBottomWrapperApollyButton {
+    width: 6.25rem !important;
+    height: 3.75rem !important;
+  }
+  .menuLine {
+    display: block !important;
+  }
   .homeSection {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40%;
-    gap: 20px;
+    padding-top: 40% !important;
   }
   .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
     width: 75%;

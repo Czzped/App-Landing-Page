@@ -3,13 +3,6 @@ $secundary-color: #4745d8;
 $primary-text-color: #232233;
 $gray-paragraphs-text-color: #6C6C72;
 
-@mixin personalize-bg($bg-color, $padding, $text-color, $border-radius) {
-    background-color: $bg-color;
-    padding: $padding;
-    color: $text-color;
-    border-radius: $border-radius;
-}
-
 * {
     padding: 0;
     margin: 0;
@@ -29,9 +22,8 @@ $gray-paragraphs-text-color: #6C6C72;
         position: absolute;
 
         padding: 2%;
-        gap: 20px;
 
-        width: 80%;
+        width: 90%;
 
         .headerTopWrapper {
             display: flex;
@@ -82,17 +74,19 @@ $gray-paragraphs-text-color: #6C6C72;
             background-color: #FFF;
             border-radius: 5px;
 
+            gap: 5px;
+
             height: 60px;
 
-            padding: 2%;
+            padding: min(35px, 2%);
+            margin-top: 20px;
 
             span {
                 display: flex;
+                justify-content: space-around;
 
                 align-items: center;
                 gap: 20px;
-
-                font-size: 20px;
 
                 .headerBottomWrapperNavBarButton {
                     color: $primary-text-color;
@@ -110,20 +104,39 @@ $gray-paragraphs-text-color: #6C6C72;
                 }
 
                 .headerBottomWrapperNavBarDownloadButton {
-                    @include personalize-bg($primary-color, 2%, #FFF, 5px);
-
                     display: flex;
-                    justify-content: center;
                     align-items: center;
+                    justify-content: center;
 
-                    height: 3rem;
+                    cursor: pointer;
 
-                    text-decoration: none;
+                    background-color: $primary-color;
+
+                    min-width: 72px;
+                    min-height: 34px;
+                    max-height: 90px;
+
+                    padding: 2%;
+
+                    border-radius: 5px;
+
+                    a {
+                        text-decoration: none;
+                        color: #FFF;
+
+                        margin: 2px;
+
+                        font-size: min(20px, 1.5vw);
+                    }
 
                     &:hover {
                         background-color: $secundary-color;
                     }
                 }
+            }
+
+            .menuLine {
+                display: none;
             }
 
             .headerBottomWrapperApollyButton {
@@ -135,10 +148,25 @@ $gray-paragraphs-text-color: #6C6C72;
 
                 width: 12.5rem;
                 height: 5.625rem;
+
                 flex-shrink: 0;
 
                 border-radius: .3125rem;
+
+                a {
+                    text-align: center;
+
+                    width: 100%;
+
+                    img {
+                        width: 80%;
+                    }
+                }
             }
+        }
+
+        a {
+            font-size: min(20px, 1.5vw);
         }
     }
 
@@ -149,7 +177,7 @@ $gray-paragraphs-text-color: #6C6C72;
             display: flex;
             justify-content: center;
 
-            gap: 50px;
+            gap: 20px;
 
             padding: 5%;
             padding-top: 15%;
@@ -162,6 +190,7 @@ $gray-paragraphs-text-color: #6C6C72;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
                 position: relative;
 
                 width: 100%;
@@ -178,9 +207,10 @@ $gray-paragraphs-text-color: #6C6C72;
 
                     gap: 5%;
 
+                    position: absolute;
+
                     padding: 2%;
 
-                    position: absolute;
                     right: 20%;
                     top: 10%;
 
@@ -657,6 +687,8 @@ $gray-paragraphs-text-color: #6C6C72;
 
         position: relative;
 
+        width: 100%;
+
         .footerTopWrapper {
             display: flex;
 
@@ -801,8 +833,6 @@ $gray-paragraphs-text-color: #6C6C72;
 
                                 padding: 2.5%;
 
-                                height: 100%;
-
                                 cursor: pointer;
 
                                 border: none;
@@ -827,6 +857,49 @@ $gray-paragraphs-text-color: #6C6C72;
             }
         }
     }
+
+    .unactivatedHambugerMenuWrapperButtons {
+        display: none;
+    }
+
+    .activatedHambugerMenuWrapper {
+        display: flex !important;
+        justify-content: end;
+
+        position: absolute;
+
+        width: 100%;
+
+        .activatedHambugerMenuWrapperButtons {
+            display: flex !important;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 5%;
+
+            position: absolute;
+
+            gap: 25px;
+
+            background-color: #FFF;
+
+            width: 50vw;
+
+            a {
+                color: $primary-text-color;
+
+                text-decoration: none;
+
+                font-size: 1.2rem;
+
+                &:hover {
+                    color: $primary-color;
+
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    }
 }
 
 .gray-paragraphs {
@@ -842,15 +915,34 @@ $gray-paragraphs-text-color: #6C6C72;
 }
 
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
+    .headerTopWrapper {
+        display: none !important;
+    }
+
+    .headerBottomWrapperNavBarButton {
+        display: none !important;
+    }
+
+    .headerBottomWrapper {
+        height: 2.5rem !important;
+
+        .headerBottomWrapperApollyButton {
+            width: 6.25rem !important;
+            height: 3.75rem !important;
+        }
+    }
+
+    .menuLine {
+        display: block !important;
+    }
+
     .homeSection {
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        padding-top: 40%;
-
-        gap: 20px;
+        padding-top: 40% !important;
 
         .homeSectionLeftWrapper {
             .homeSectionLeftWrapperBoxContant {
@@ -879,7 +971,6 @@ $gray-paragraphs-text-color: #6C6C72;
     .aboutSectionBottomContainer {
         flex-direction: column;
         align-items: center;
-
     }
 
 
