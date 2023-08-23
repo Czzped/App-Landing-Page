@@ -1,0 +1,1 @@
+document.getElementById("menuLine").addEventListener("click",(function(){document.getElementById("mobileMenuWrapper").classList.toggle("activatedHambugerMenuWrapper")}));

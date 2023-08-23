@@ -1,0 +1,846 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Josefin Sans, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container header {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 2%;
+  width: 90%;
+}
+
+.container header .headerTopWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container header .headerTopWrapper .headerTopWrapperContactButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.container header .headerTopWrapper .headerTopWrapperContactButtons span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.container header .headerTopWrapper .headerTopWrapperContactButtons span p {
+  color: var(--white, #FFF);
+  font-size: small;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container header .headerTopWrapper .headerTopWrapperSocialMidiasButtons .socialMidiasButtonsContant {
+  display: flex;
+  gap: 20px;
+}
+
+.container header .headerTopWrapper .headerTopWrapperSocialMidiasButtons .socialMidiasButtonsContant img {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.container header .headerBottomWrapper {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  border-radius: 5px;
+  height: 60px;
+  padding: min(35px, 2%);
+  margin-top: 20px;
+}
+
+.container header .headerBottomWrapper span {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.container header .headerBottomWrapper span .headerBottomWrapperNavBarButton {
+  color: #232233;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.container header .headerBottomWrapper span .headerBottomWrapperNavBarButton:hover {
+  color: #5956E9;
+  text-decoration-line: underline;
+}
+
+.container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 1;
+  cursor: pointer;
+  background-color: #5956E9;
+  min-width: 72px;
+  min-height: 34px;
+  max-height: 90px;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton a {
+  text-decoration: none;
+  color: #FFF;
+  margin: 5px;
+  font-size: min(20px, 1.8vw);
+}
+
+.container header .headerBottomWrapper span .headerBottomWrapperNavBarDownloadButton:hover {
+  background-color: #4745d8;
+}
+
+.container header .headerBottomWrapper .menuLine {
+  display: none;
+}
+
+.container header .headerBottomWrapper .headerBottomWrapperApollyButtonContainer {
+  width: 100%;
+  padding-left: 5%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container header .headerBottomWrapper .headerBottomWrapperApollyButtonContainer .headerBottomWrapperApollyButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  width: 12.5rem;
+  height: 5.625rem;
+  border-radius: 0.3125rem;
+}
+
+.container header .headerBottomWrapper .headerBottomWrapperApollyButtonContainer .headerBottomWrapperApollyButton a {
+  text-align: center;
+}
+
+.container header .headerBottomWrapper .headerBottomWrapperApollyButtonContainer .headerBottomWrapperApollyButton a img {
+  width: 80%;
+}
+
+.container header a {
+  font-size: min(20px, 1.5vw);
+}
+
+.container main {
+  width: 100%;
+}
+
+.container main .homeSection {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 5%;
+  padding-top: 20vh;
+  background-image: url("../assets/background/bg-img.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container main .homeSection .homeSectionLeftWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 75%;
+  min-height: 75%;
+  gap: 5%;
+  position: absolute;
+  padding: 2%;
+  right: 20%;
+  top: 10%;
+  background-color: #FFF;
+}
+
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant div div img {
+  width: 2095%;
+  cursor: pointer;
+}
+
+.container main .homeSection .homeSectionLeftWrapper .homeSectionLeftWrapperBoxContant h1 {
+  color: #5956E9;
+}
+
+.container main .homeSection .homeSectionLeftWrapper img {
+  width: 75%;
+}
+
+.container main .homeSection .homeSectionRigthWrapper {
+  display: flex;
+  justify-content: center;
+  padding-left: 20%;
+  width: 100%;
+}
+
+.container main .homeSection .homeSectionRigthWrapper img {
+  width: 100%;
+}
+
+.container main .aboutSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  gap: 80px;
+}
+
+.container main .aboutSection span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+
+.container main .aboutSection .aboutSectionBottomContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerLeftWrapper {
+  width: 75%;
+}
+
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 80px;
+}
+
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant div {
+  display: flex;
+  gap: 10px;
+}
+
+.container main .aboutSection .aboutSectionBottomContainer .aboutSectionBottomContainerRigthWrapper .aboutSectionTextBoxContant p {
+  text-align: start;
+}
+
+.container main .featuresSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/background/bg-img.svg");
+  background-size: cover;
+  color: #FFF;
+  padding: 10%;
+  gap: 50px;
+}
+
+.container main .featuresSection span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+}
+
+.container main .featuresSection .featuresSectionAppInterface {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container main .featuresSection .featuresSectionAppInterface div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box1 {
+  grid-column: 1/4;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box2 {
+  grid-row: 2/3;
+  padding-top: 25%;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  grid-row: 2/5;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box4 {
+  grid-row: 2/3;
+  padding-top: 25%;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box5 {
+  grid-row: 4/5;
+  padding-bottom: 25%;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box6 {
+  grid-row: 4/5;
+  padding-bottom: 25%;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .text-box7 {
+  grid-column: 1/4;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceSurfacesTextBox {
+  align-items: center;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceLeftSideTextBox {
+  align-items: end;
+  text-align: end;
+}
+
+.container main .featuresSection .featuresSectionAppInterface .featuresSectionAppInterfaceRigthSideTextBox {
+  align-items: start;
+  text-align: start;
+}
+
+.container main .appInterfaceSection {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 5%;
+  text-align: center;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionMainSlider .swiper {
+  max-width: 100vh;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionMainSlider .swiper .swiper-wrapper .swiper-slide img {
+  width: 30%;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 50px;
+  text-align: start;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .downloadTextBoxContant {
+  display: flex;
+  flex-direction: column;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .downloadTextBoxContant div {
+  display: flex;
+  gap: 2%;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .downloadTextBoxContant div img {
+  min-width: 25%;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox {
+  display: flex;
+  gap: 5%;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox .ratingTextBoxContant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-width: 30%;
+  padding: 2%;
+  color: #FFF;
+  border-radius: 0.625rem;
+  gap: 15px;
+  background-color: #5956E9;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperLeftContantBox .ratingTextBox .ratingTextBoxContant img {
+  width: 25px;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperRightImgBox {
+  width: 100%;
+}
+
+.container main .appInterfaceSection .appInterfaceSectionBottomDownloadAppWrapper .appInterfaceSectionDownloadAppWrapperRightImgBox img {
+  width: 80%;
+}
+
+.container main .howToUseSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+}
+
+.container main .howToUseSection main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  width: 100%;
+  min-height: 45vh;
+  background-image: url("../assets/background/bg-img.svg");
+  background-size: cover;
+}
+
+.container main .howToUseSection main p {
+  width: 70%;
+}
+
+.container main .howToUseSection img {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  width: 100%;
+}
+
+.container main .ourTeamSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 5%;
+  padding-top: 20%;
+  width: 100%;
+}
+
+.container main .ourTeamSection span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container main .ourTeamSection span p {
+  width: 50%;
+}
+
+.container main .ourTeamSection main {
+  display: flex;
+  gap: 50px;
+}
+
+.container main .ourTeamSection main .teamProfileContant .teamProfileImg {
+  width: 50%;
+}
+
+.container main .ourTeamSection main .teamProfileContant .teamProfileContantSocialMidias {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container main .ourTeamSection main .teamProfileContant .teamProfileContantSocialMidias img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.container main .ourHappyCostumersSection {
+  text-align: center;
+  padding: 5%;
+  background-image: url("../assets/background/bg-img.svg");
+  background-size: cover;
+  color: #FFF;
+}
+
+.container main .ourHappyCostumersSection span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container main .ourHappyCostumersSection span p {
+  width: 70%;
+}
+
+.container main .ourHappyCostumersSection .swiper {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  gap: 10px;
+}
+
+.container main .ourHappyCostumersSection .swiper .swiper-wrapper {
+  display: flex;
+}
+
+.container main .ourHappyCostumersSection .swiper .swiper-wrapper .swiper-slide {
+  color: #232233;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #FFF;
+}
+
+.container main .ourHappyCostumersSection .swiper .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  position: static;
+}
+
+.container main .ourHappyCostumersSection .swiper .swiper-pagination span {
+  height: 20px;
+  width: 20px;
+  background-color: #FFF;
+}
+
+.container main .ourRecentBlogSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+}
+
+.container main .ourRecentBlogSection span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.container main .ourRecentBlogSection span p {
+  width: 50%;
+}
+
+.container main .ourRecentBlogSection .blogLinkContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+  gap: 10px;
+}
+
+.container main .ourRecentBlogSection .blogLinkContainer .blogLinkContant {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-decoration: none;
+  color: #232233;
+  transition: 0.5s;
+}
+
+.container main .ourRecentBlogSection .blogLinkContainer .blogLinkContant img {
+  width: 100%;
+}
+
+.container main .ourRecentBlogSection .blogLinkContainer .blogLinkContant a {
+  width: 200%;
+}
+
+.container main .ourRecentBlogSection .blogLinkContainer .blogLinkContant:hover {
+  opacity: 80%;
+}
+
+.container footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.container footer .footerTopWrapper {
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  padding: 5%;
+  background-color: #FFF;
+  border-radius: 30px;
+  width: 80%;
+  bottom: 90%;
+}
+
+.container footer .footerTopWrapper hr {
+  display: flex;
+  border: 2px solid #6C6C72;
+}
+
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox,
+.container footer .footerTopWrapper .footerTopWrapperLeftTextBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox span,
+.container footer .footerTopWrapper .footerTopWrapperLeftTextBox span {
+  background-color: #5956E9;
+  padding: 4%;
+  border-radius: 50px;
+}
+
+.container footer .footerTopWrapper .footerTopWrapperRigthTextBox span img,
+.container footer .footerTopWrapper .footerTopWrapperLeftTextBox span img {
+  width: 25px;
+}
+
+.container footer .footerMainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #232233;
+  padding: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  width: 100%;
+  color: #FFF;
+  gap: 50px;
+}
+
+.container footer .footerMainWrapper div {
+  width: 100%;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer {
+  display: flex;
+  gap: 50px;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLogoArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 25px;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLogoArea div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea {
+  display: flex;
+  flex-direction: column;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 20px;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea div a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperLinksArea div a:hover {
+  text-decoration: underline;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 25px;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div {
+  display: flex;
+  padding: 0.5%;
+  border-radius: 4px;
+  background-color: #FFF;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 2%;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div button {
+  background-color: #5956E9;
+  padding: 2.5%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.container footer .footerMainWrapper .footerMainWrapperLinksContainer .footerBottomWrapperNewsLetterArea form div button:hover {
+  background-color: #4745d8;
+}
+
+.container footer .footerMainWrapper .footerBottomWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.container .unactivatedHambugerMenuWrapperButtons {
+  display: none;
+}
+
+.container .activatedHambugerMenuWrapper {
+  display: flex !important;
+  justify-content: end;
+  position: absolute;
+  width: 100%;
+}
+
+.container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5%;
+  position: absolute;
+  gap: 25px;
+  background-color: #FFF;
+  width: 50vw;
+}
+
+.container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons a {
+  color: #232233;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons a:hover {
+  color: #5956E9;
+  text-decoration-line: underline;
+}
+
+.gray-paragraphs {
+  color: #6C6C72;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.white-paragraphs {
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@media (max-width: 780px) {
+  .headerTopWrapper {
+    display: none !important;
+  }
+
+  .headerBottomWrapperNavBarButton {
+    display: none !important;
+  }
+
+  .headerBottomWrapper {
+    height: 2.5rem !important;
+  }
+
+  .headerBottomWrapper .headerBottomWrapperApollyButtonContainer .headerBottomWrapperApollyButton {
+    width: 6.25rem !important;
+    height: 3.75rem !important;
+  }
+
+  .menuLine {
+    display: block !important;
+  }
+
+  .homeSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutSectionBottomContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featuresSectionAppInterface {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .featuresSectionAppInterface .box {
+    text-align: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+  }
+
+  .appInterfaceSectionBottomDownloadAppWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamProfileContainer {
+    flex-direction: column;
+  }
+
+  .ourHappyCostumersSection .swiper {
+    width: 100% !important;
+  }
+
+  .blogLinkContainer {
+    flex-direction: column;
+    padding-bottom: 50% !important;
+  }
+
+  .footerTopWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerTopWrapper div {
+    flex-direction: column;
+  }
+
+  .footerTopWrapper hr {
+    width: 50%;
+  }
+
+  .footerMainWrapperLinksContainer {
+    flex-direction: column;
+    padding-top: 25%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
