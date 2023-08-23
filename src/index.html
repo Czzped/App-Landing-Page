@@ -46,10 +46,12 @@
                     <a href="#aboutSection" class="headerBottomWrapperNavBarButton">ABOUT</a>
                     <a href="#featuresSection" class="headerBottomWrapperNavBarButton">FEATURES</a>
                 </span>
-                <div class="headerBottomWrapperApollyButton">
-                    <a href="#appInterfaceSection">
-                        <img src="./assets/icons/logo.svg" alt="logo-img">
-                    </a>
+                <div class="headerBottomWrapperApollyButtonContainer">
+                    <div class="headerBottomWrapperApollyButton">
+                        <a href="#appInterfaceSection">
+                            <img src="./assets/icons/logo.svg" alt="logo-img">
+                        </a>
+                    </div>
                 </div>
                 <span>
                     <a href="#ourHappyCostumersSection" class="headerBottomWrapperNavBarButton">SCREENSHOT</a>
@@ -61,15 +63,6 @@
             </div>
         </header>
 
-        <div class="unactivatedHambugerMenuWrapperButtons" id="mobileMenuWrapper">
-            <div class="activatedHambugerMenuWrapperButtons">
-                <a href="#homeSection">HOME</a>
-                <a href="#aboutSection">ABOUT</a>
-                <a href="#featuresSection">FEATURES</a>
-                <a href="#ourHappyCostumersSection">SCREENSHOT</a>
-                <a href="#ourRecentBlogSection">BLOG</a>
-            </div>
-        </div>
         <main>
             <section class="homeSection" id="homeSection">
                 <div class="homeSectionLeftWrapper">
@@ -599,9 +592,21 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        <script src="./js/swiperScript.js"></script>
-        <script src="./js/hambugerMenuWrapperScript.js"></script>
+        <div class="unactivatedHambugerMenuWrapperButtons" id="mobileMenuWrapper">
+            <div class="activatedHambugerMenuWrapperButtons">
+                <a href="#homeSection">HOME</a>
+                <a href="#aboutSection">ABOUT</a>
+                <a href="#featuresSection">FEATURES</a>
+                <a href="#ourHappyCostumersSection">SCREENSHOT</a>
+                <a href="#ourRecentBlogSection">BLOG</a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiperScript.js"></script>
+    <script src="./js/hambugerMenuWrapperScript.js"></script>
 </body>
 
 </html>
