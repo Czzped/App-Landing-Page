@@ -19,7 +19,7 @@ $gray-paragraphs-text-color: #6C6C72;
     header {
         display: flex;
         flex-direction: column;
-        position: absolute;
+        position: fixed;
 
         padding: 2%;
 
@@ -890,7 +890,7 @@ $gray-paragraphs-text-color: #6C6C72;
 
             padding: 5%;
 
-            position: absolute;
+            position: fixed;
 
             gap: 25px;
 
