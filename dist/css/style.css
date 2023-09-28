@@ -13,7 +13,7 @@
 .container header {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   padding: 2%;
   width: 90%;
 }
@@ -99,7 +99,7 @@
 }
 .container header .headerBottomWrapper .headerBottomWrapperApollyButtonContainer {
   width: 100%;
-  padding-left: 5%;
+  padding-left: 6%;
   display: flex;
   justify-content: center;
   position: relative;
@@ -405,6 +405,7 @@
 }
 .container main .ourHappyCostumersSection {
   text-align: center;
+  position: static;
   padding: 5%;
   background-image: url("../assets/background/bg-img.svg");
   background-size: cover;
@@ -601,21 +602,22 @@
   gap: 20px;
   text-align: center;
 }
-.container .unactivatedHambugerMenuWrapperButtons {
+.container .unactivatedHambugerMenuWrapper {
   display: none;
 }
 .container .activatedHambugerMenuWrapper {
   display: flex !important;
   justify-content: end;
-  position: absolute;
-  width: 100%;
+  width: 100vw;
+  position: fixed;
+  z-index: 40;
 }
 .container .activatedHambugerMenuWrapper .activatedHambugerMenuWrapperButtons {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
   padding: 5%;
-  position: fixed;
+  position: absolute;
   gap: 25px;
   background-color: #FFF;
   width: 50vw;
