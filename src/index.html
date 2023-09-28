@@ -17,7 +17,51 @@
 
 <body>
     <div class="container">
-
+        <header>
+            <div class="headerTopWrapper">
+                <div class="headerTopWrapperContactButtons">
+                    <span class="contactButtonsContant">
+                        <img src="./assets/icons/mail-fill.svg" alt="">
+                        <p>Info@youremail.com</p>
+                    </span>
+                    <span class="contactButtonsContant">
+                        <img src="./assets/icons/phone-fill.svg" alt="">
+                        <p>(480) 555-0103</p>
+                    </span>
+                    <span class="contactButtonsContant"></span>
+                </div>
+                <div class="headerTopWrapperSocialMidiasButtons">
+                    <div class="socialMidiasButtonsContant">
+                        <img src="./assets/icons/facebook-fill.svg" alt="">
+                        <img src="./assets/icons/instagram-fill.svg" alt="">
+                        <img src="./assets/icons/twitter-fill.svg" alt="">
+                        <img src="./assets/icons/youtube-fill.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="headerBottomWrapper">
+                <img src="./assets/icons/menu-line.svg" alt="menu-line" class="menuLine" id="menuLine">
+                <span>
+                    <a href="#homeSection" class="headerBottomWrapperNavBarButton">HOME</a>
+                    <a href="#aboutSection" class="headerBottomWrapperNavBarButton">ABOUT</a>
+                    <a href="#featuresSection" class="headerBottomWrapperNavBarButton">FEATURES</a>
+                </span>
+                <div class="headerBottomWrapperApollyButtonContainer">
+                    <div class="headerBottomWrapperApollyButton">
+                        <a href="#appInterfaceSection">
+                            <img src="./assets/icons/logo.svg" alt="logo-img">
+                        </a>
+                    </div>
+                </div>
+                <span>
+                    <a href="#ourHappyCostumersSection" class="headerBottomWrapperNavBarButton">SCREENSHOT</a>
+                    <a href="#ourRecentBlogSection" class="headerBottomWrapperNavBarButton">BLOG</a>
+                    <div class="headerBottomWrapperNavBarDownloadButton">
+                        <a href="#">DOWNLOAD</a>
+                    </div>
+                </span>
+            </div>
+        </header>
 
         <main>
             <section class="homeSection" id="homeSection">
@@ -548,53 +592,7 @@
             </div>
         </footer>
 
-        <header>
-            <div class="headerTopWrapper">
-                <div class="headerTopWrapperContactButtons">
-                    <span class="contactButtonsContant">
-                        <img src="./assets/icons/mail-fill.svg" alt="">
-                        <p>Info@youremail.com</p>
-                    </span>
-                    <span class="contactButtonsContant">
-                        <img src="./assets/icons/phone-fill.svg" alt="">
-                        <p>(480) 555-0103</p>
-                    </span>
-                    <span class="contactButtonsContant"></span>
-                </div>
-                <div class="headerTopWrapperSocialMidiasButtons">
-                    <div class="socialMidiasButtonsContant">
-                        <img src="./assets/icons/facebook-fill.svg" alt="">
-                        <img src="./assets/icons/instagram-fill.svg" alt="">
-                        <img src="./assets/icons/twitter-fill.svg" alt="">
-                        <img src="./assets/icons/youtube-fill.svg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="headerBottomWrapper">
-                <img src="./assets/icons/menu-line.svg" alt="menu-line" class="menuLine" id="menuLine">
-                <span>
-                    <a href="#homeSection" class="headerBottomWrapperNavBarButton">HOME</a>
-                    <a href="#aboutSection" class="headerBottomWrapperNavBarButton">ABOUT</a>
-                    <a href="#featuresSection" class="headerBottomWrapperNavBarButton">FEATURES</a>
-                </span>
-                <div class="headerBottomWrapperApollyButtonContainer">
-                    <div class="headerBottomWrapperApollyButton">
-                        <a href="#appInterfaceSection">
-                            <img src="./assets/icons/logo.svg" alt="logo-img">
-                        </a>
-                    </div>
-                </div>
-                <span>
-                    <a href="#ourHappyCostumersSection" class="headerBottomWrapperNavBarButton">SCREENSHOT</a>
-                    <a href="#ourRecentBlogSection" class="headerBottomWrapperNavBarButton">BLOG</a>
-                    <div class="headerBottomWrapperNavBarDownloadButton">
-                        <a href="#">DOWNLOAD</a>
-                    </div>
-                </span>
-            </div>
-        </header>
-
-        <div class="unactivatedHambugerMenuWrapperButtons" id="mobileMenuWrapper">
+        <div class="unactivatedHambugerMenuWrapper" id="mobileMenuWrapper">
             <div class="activatedHambugerMenuWrapperButtons">
                 <a href="#homeSection">HOME</a>
                 <a href="#aboutSection">ABOUT</a>
@@ -603,12 +601,11 @@
                 <a href="#ourRecentBlogSection">BLOG</a>
             </div>
         </div>
-
     </div>
 
+    <script src="./js/hambugerMenuWrapperScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="./scripts/swiperScript.js"></script>
-    <script src="./scripts/hambugerMenuWrapperScript.js"></script>
+    <script src="../dist/scripts/swiperScript.js"></script>
 </body>
 
 </html>

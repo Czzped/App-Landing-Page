@@ -19,7 +19,7 @@ $gray-paragraphs-text-color: #6C6C72;
     header {
         display: flex;
         flex-direction: column;
-        position: fixed;
+        position: absolute;
 
         padding: 2%;
 
@@ -142,7 +142,7 @@ $gray-paragraphs-text-color: #6C6C72;
             .headerBottomWrapperApollyButtonContainer {
                 width: 100%;
 
-                padding-left: 5%;
+                padding-left: 6%;
 
                 display: flex;
                 justify-content: center;
@@ -582,6 +582,8 @@ $gray-paragraphs-text-color: #6C6C72;
         .ourHappyCostumersSection {
             text-align: center;
 
+            position: static;
+
             padding: 5%;
 
             background-image: url("../assets/background/bg-img.svg");
@@ -871,7 +873,7 @@ $gray-paragraphs-text-color: #6C6C72;
         }
     }
 
-    .unactivatedHambugerMenuWrapperButtons {
+    .unactivatedHambugerMenuWrapper {
         display: none;
     }
 
@@ -879,9 +881,11 @@ $gray-paragraphs-text-color: #6C6C72;
         display: flex !important;
         justify-content: end;
 
-        position: absolute;
+        width: 100vw;
 
-        width: 100%;
+        position: fixed;
+
+        z-index: 40;
 
         .activatedHambugerMenuWrapperButtons {
             display: flex !important;
@@ -890,7 +894,7 @@ $gray-paragraphs-text-color: #6C6C72;
 
             padding: 5%;
 
-            position: fixed;
+            position: absolute;
 
             gap: 25px;
 
